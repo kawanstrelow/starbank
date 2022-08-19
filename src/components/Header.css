@@ -1,0 +1,20 @@
+.menu-dropdown-starbankid {
+  position: absolute;
+  top: 80px;
+  z-index: 1;
+}
+
+.menu-dropdown-contadigitalid {
+  position: absolute;
+  top: 80px;
+  z-index: 1;
+}
+
+.noshow {
+  display: none;
+}
+
+.navlist:hover {
+  color: #1d4ed8;
+  font-weight: bold;
+}

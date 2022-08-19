@@ -1,0 +1,8 @@
+.zoomAnimation {
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+
+.zoomAnimation:hover {
+  transform: scale(1.3);
+}

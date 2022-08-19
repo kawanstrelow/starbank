@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://rsms.me/inter/inter.css');
+
+@font-face {
+  font-family: 'Sora-Regular';
+  src: url('fonts/Sora-Regular.ttf') format('truetype');
+}
+
+* {
+  font-family: 'inter', sans-serif;
+}
+
+body {
+  width: 100%;
+  padding: 0px;
+  justify-content: center;
+  margin: auto;
+}

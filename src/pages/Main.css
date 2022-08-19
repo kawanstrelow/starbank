@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.conteudo-principal-esq {
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.conteudo-principal-dir {
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header {
+  z-index: 1;
+  position: relative;
+}
+
+.conteudoprincipal {
+  height: 100vh;
+}
+
+.vantagens {
+  height: 100%;
+}
+
+.ccard {
+  animation: animationCard 3s linear 1s infinite;
+}
+
+.ccardverso {
+  /* transform: translate(50px, 50px); */
+  /* transform: rotate(-30deg); */
+  /* transform: skew(20deg); */
+  /* transform: translateX(100px) scale(1.5) rotate(-15deg); */
+  animation: animationCard 2s linear 0.5s infinite;
+}
+
+.smartphone {
+  width: 540px;
+}
+
+.trace {
+  width: 50px;
+  height: 2px;
+  background-color: #1d4ed8;
+  right: 20px;
+  position: absolute;
+  border-radius: 4px;
+}
+
+.trace:nth-child(1) {
+  top: 26px;
+}
+
+.trace:nth-child(2) {
+  top: 46px;
+}
+
+.trace:nth-child(3) {
+  top: 66px;
+}
+
+/* ANIMAÇÕES */
+
+[dataanime='scrollReveal1'] {
+  animation: animationHeader 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animationCard {
+  0% {
+  }
+
+  50% {
+    transform: rotate(-3deg);
+  }
+
+  100% {
+  }
+}
+
+@keyframes animationHeader {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -50px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+[dataanime] {
+  opacity: 0;
+  transition: 1s;
+  transform: translate3d(0, -50px, 0);
+}
+
+[dataanime].animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (max-width: 1320px) {
+  .header,
+  .abrirconta,
+  .vantagens,
+  .depoimentos,
+  .download,
+  .duvidas,
+  .footer {
+    padding: 4px 80px;
+  }
+
+  .conteudo-principal-esq-conteudo {
+    width: 100%;
+    padding: 4px 48px;
+  }
+
+  .vantagens {
+    height: 100%;
+  }
+
+  .vantagenscardgroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vantagenscard {
+    width: 100%;
+  }
+
+  .abrirconta {
+    height: 100%;
+  }
+
+  .downloaddiv {
+    margin-top: 120px;
+    height: 100%;
+  }
+
+  .duvidas {
+    height: 100%;
+  }
+
+  .doubttopic {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header,
+  .abrirconta,
+  .vantagens,
+  .depoimentos,
+  .download,
+  .duvidas,
+  .footer {
+    padding: 4px 48px;
+  }
+
+  .conteudo-principal-esq {
+    width: 100%;
+    padding: 4px 48px;
+  }
+
+  .conteudo-principal-esq-conteudo {
+    width: 100%;
+    padding: 4px 48px;
+  }
+
+  .conteudo-principal-dir,
+  .smartphone {
+    display: none;
+  }
+
+  .depoimentosh6 {
+    margin-top: 30px;
+  }
+
+  .depoimentos {
+    height: 100%;
+  }
+
+  .testimonialgroup {
+    display: block;
+  }
+
+  .testimonialcard {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .downloadbuttongroup {
+    display: block;
+  }
+
+  .download {
+    height: 100%;
+  }
+  .downloadbutton {
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+  }
+
+  .sectiondownloadimglogo {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header,
+  .abrirconta,
+  .vantagens,
+  .depoimentos,
+  .download,
+  .duvidas,
+  .footer {
+    padding: 4px 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header,
+  .abrirconta,
+  .vantagens,
+  .depoimentos,
+  .download,
+  .duvidas,
+  .footer {
+    padding: 10px 36px;
+  }
+
+  .ulmenu,
+  .loginbutton {
+    display: none;
+  }
+
+  .buttonopenaccount {
+    width: 200px;
+  }
+
+  .buttonopenaccount h3 {
+    font-size: 1rem;
+  }
+
+  .setadireitadiv {
+    width: 1.25rem;
+    margin-right: 20px;
+  }
+
+  .conteudo-principal-esq-conteudo,
+  .conteudo-principal-esq-botoes {
+    width: 100%;
+    padding: 4px 5px;
+  }
+
+  .menu-mobile {
+    display: flex;
+  }
+
+  .menu-mobile-full {
+    position: absolute;
+    top: 88px;
+    color: white;
+    background: rgba(29, 78, 216, 0.9);
+    width: 100%;
+    height: 100vh;
+  }
+}
